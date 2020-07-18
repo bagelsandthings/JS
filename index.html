@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+
+    // function add7() {
+    //   let choice = Number(prompt("Pick a number to add 7."));
+    //   let answer = choice + 7;
+    //   return answer;
+    // }
+
+    // function multiply() {
+    //   let x = Number(prompt("What is the first number?"));
+    //   let y = Number(prompt('What is the second number?'));
+
+    //   let multiplied = x * y;
+    //   return multiplied;
+    // }
+
+    // function lastLetter() {
+    //   let text = prompt("Enter a word!");
+    //   let length = text.length;
+    //   return text.charAt(length - 1);
+    // }
+
+    function capitalize() {
+      let text = prompt("Enter a word in any format!");
+      let firstLetter = text.charAt(0).toUpperCase();
+      let remainingLetters = text.substr(1).toLowerCase()
+      let newString = firstLetter + remainingLetters;
+      return newString;
+    }
+
+    // alert('Your number added to 7 equals: ' + add7() + '!');
+    // alert('Your numbers multiplied are ' + multiply() + '!');
+    // alert('The last letter of your string is: ' + lastLetter() + '!');
+    alert('Your word capitalized is: ' + capitalize() + '!');
+
+  </script>
+</body>
+</html>
